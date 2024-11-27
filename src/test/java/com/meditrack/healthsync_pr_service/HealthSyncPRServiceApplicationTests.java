@@ -1,10 +1,10 @@
-package com.meditrack.meditrack_pr_service;
+package com.meditrack.healthsync_pr_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MeditrackPrServiceApplicationTests {
+class HealthSyncPRServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
