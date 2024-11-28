@@ -1,7 +1,7 @@
-package com.meditrack.healthsync_pr_service;
+package com.healthsync.pr_service.service;
 
-import com.meditrack.healthsync_pr_service.Patient;
-import com.meditrack.healthsync_pr_service.PatientRepository;
+import com.healthsync.pr_service.entity.Patient;
+import com.healthsync.pr_service.repository.PatientRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

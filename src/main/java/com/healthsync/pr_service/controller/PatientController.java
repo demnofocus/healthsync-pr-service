@@ -1,7 +1,7 @@
-package com.meditrack.healthsync_pr_service;
+package com.healthsync.pr_service.controller;
 
-import com.meditrack.healthsync_pr_service.Patient;
-import com.meditrack.healthsync_pr_service.PatientService;
+import com.healthsync.pr_service.entity.Patient;
+import com.healthsync.pr_service.service.PatientService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

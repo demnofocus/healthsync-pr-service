@@ -1,4 +1,4 @@
-package com.meditrack.healthsync_pr_service;
+package com.healthsync.pr_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import jakarta.validation.constraints.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "patients")
@@ -33,4 +34,16 @@ public class Patient {
 
     @Column(nullable = false)
     private LocalDate dateOfBirth;
+
+    // One-to-Many relationship with MedicalHistory
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<MedicalHistory> medicalHistory;
+
+    // One-to-Many relationship with Prescription
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Prescription> prescriptions;
+
+    // One-to-Many relationship with LabResult
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<LabResult> labResults;
 }

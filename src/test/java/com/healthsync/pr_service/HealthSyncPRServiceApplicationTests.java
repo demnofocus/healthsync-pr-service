@@ -1,4 +1,4 @@
-package com.meditrack.healthsync_pr_service;
+package com.healthsync.pr_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
